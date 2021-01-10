@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/css/login.css' %}">
+    <title>Mustang | Admin</title>
+</head>
+
+<body>
+    <div id="login ">
+        <div class="login-page dfjc">
+            <div class="login-text container90">
+                <div class="logo">
+                    <h1>Mustang.uz</h1>
+                </div>
+                <div class="logo-phone">
+                    <p>+998 (99) 878-07-87</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="login-page dfjc">
+            <div class="login-items container90 dfjc">
+                <div class="login-inputes container50">
+                    <h1>Tizimga kirish</h1>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="input-login">
+                            <input type="text" placeholder="*login">
+                        </div>
+                        <div class="input-login">
+                            <input type="password" placeholder="*parol">
+                        </div>
+                        <div class="login-form-submit">
+                            <input type="submit" value="Kirish">
+                            <a href="#">Parolni unutdingizmi.?</a>
+                        </div>
+                        <p>Tizimga kirishni amalga oshirgandan so`ng chiqayotgan paytda albatta Log out Chiqish Chiqish tugmasini bosgan holda chiqing.</p>
+
+                    </form>
+                </div>
+                <div class="login-images container50">
+                    <h1>Saytimizga Xush kelibsiz</h1>
+                </div>
+            </div>
+        </div>
+        <div class="login-items-cover">
+            <img height="100%" src="{% static 'images/bg/glavni-bg.svg' %}" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
